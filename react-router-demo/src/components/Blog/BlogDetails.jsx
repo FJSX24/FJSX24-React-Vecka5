@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
 
 function BlogDetails() {
-  const { blogId } = useParams(); // 👈 Hämta bloggens ID från URL:en
-  console.log("blogId", useParams());
+  const { blogId } = useParams(); // Hämta bloggens ID från URL:en
+  console.log("blogId", blogId);
 
   return (
     <div>

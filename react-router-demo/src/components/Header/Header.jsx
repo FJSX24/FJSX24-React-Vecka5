@@ -12,20 +12,28 @@ function Header() {
   //   navigate("/about");
   // }
   return (
-    <nav>
-      <ul>
-        <li>
-          <NavLink to="/">Home</NavLink>
-        </li>
-        {/* <li onClick={navigateToAboutPage}>About</li> */}
-        <li>
-          <NavLink to="/about">About</NavLink>
-        </li>
-        <li>
-          <NavLink to="/blog">Blog</NavLink>
-        </li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <NavLink activeClassName="active-link" to="/">
+              Home
+            </NavLink>
+          </li>
+          {/* <li onClick={navigateToAboutPage}>About</li> */}
+          <li>
+            <NavLink activeClassName="active-link" to="/about">
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink activeClassName="active-link" to="/blog">
+              Blog
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
+    </header>
   );
 }
 
